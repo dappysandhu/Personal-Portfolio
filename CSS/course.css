@@ -1,0 +1,140 @@
+@import 'theme.css';
+
+#myCollections {
+    padding: 40px 20px;
+    background: #f5f5f5;
+  }
+
+  .slider {
+    position: relative;
+    max-width: 100%;
+    margin: 40px auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .slide-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.3)
+    );
+    height: 500px; /* Match slide height */
+  }
+
+  .slide-item {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .slide-item.active {
+    opacity: 1;
+  }
+
+  .slides {
+    display: block; /* Change from none to block */
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+  }
+
+  .prev:after,
+  .next:after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-top: 3px solid #333;
+    border-right: 3px solid #333;
+    display: inline-block;
+  }
+
+  .prev:after {
+    transform: rotate(-135deg);
+    margin-left: 5px;
+  }
+
+  .next:after {
+    transform: rotate(45deg);
+    margin-right: 5px;
+  }
+
+  .prev:hover,
+  .next:hover {
+    background: #6b6767;
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .prev {
+    left: 20px;
+  }
+  .next {
+    right: 20px;
+  }
+
+  .caption {
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.4)
+    );
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+
+  .progress-dots {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .progress-dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+
+  .progress-dot.active {
+    background-color: #717171;
+  }
+
+  .progress-dot:hover {
+    background-color: #333;
+  }

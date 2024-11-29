@@ -1,0 +1,407 @@
+html {
+   background-color: darkgray;
+   font-family: Verdana, Geneva, Arial, sans-serif;
+}
+
+body {
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 960px;
+   min-width: 640px;
+   width: 95%;
+   background-color: rgb(39, 41, 44);
+}
+
+#header_title {
+   text-align: center;
+   font-size: 4em;
+   color: rgb(255, 255, 255);
+   text-shadow: 2px 4px 2px rgba(0, 0, 0, 1 );
+   padding: 50px 10px;
+   background-image: url(../Img/header_img.webp);
+      background-size: cover;
+   background-position: center
+}
+
+nav.horizontalNavigation {
+   text-align: center;
+}
+
+/* Horizontal Navigation Styles */
+
+nav.horizontalNavigation a {
+   font-size: 1.4em;
+   line-height: 1.8em;
+   text-align: center;
+   color: rgb(239, 220, 156);
+}
+
+/* Left Column Paragraph Styles */
+section#leftColumn {
+   color: rgb(248, 248, 186);
+   font-size: 0.9em;
+   line-height: 1.6em;
+   text-align: center;
+}
+
+
+/* Footer Styles */
+
+body>footer {
+   font-size: 0.9em;
+   color: rgb(212, 212, 131);
+}
+
+footer h1 {
+   color: rgb(237, 237, 195);
+   font-size: 1.1em;
+   letter-spacing: 0.2em;
+   margin: 1em 0 0.5em 1em;
+}
+
+/* Vertical Navigation Styles */
+
+nav.verticalNavigation li {
+   margin-left: 1em;
+   line-height: 2em;
+}
+
+
+
+nav.verticalNavigation a {
+   color: rgb(222, 222, 163);
+}
+
+
+section#contactInfo p {
+   line-height: 1.4em;
+   margin: 1em;
+}
+
+.social-link {
+   /* text-decoration: none; */
+   color: #000; 
+ }
+ 
+ .social-icon {
+   width: 24px; 
+   height: 24px;
+   margin-right: 4px; 
+   vertical-align: middle; 
+ }
+
+/* Body Styles */
+
+/* Body Header Styles */
+
+body>header>img {
+   display: block;
+   width: 100%;
+}
+
+
+
+section#rightColumn img {
+   display: block;
+   width: 100%;
+   text-align: center;
+}
+
+header nav.horizontalNavigation li {
+   text-align: center;
+   list-style-type: none;
+}
+
+section#rightColumn>nav.horizontalNavigation li {
+   width: 25%;
+   list-style-type: none;
+   margin: auto;
+}
+
+
+nav.horizontalNavigation a:hover {
+   color: #ffffff; /* Change color on hover */
+}
+
+/* Footer Styles */
+
+footer {
+   background-color: rgb(84, 90, 97);
+   text-align: center;
+   /* clear: left; */
+}
+
+footer li {
+   list-style-type: none;
+}
+
+
+
+.portfolio {
+   display: flex;
+   justify-content: space-around; /* Space evenly */
+   flex-wrap: wrap; /* Allow wrapping to the next line if needed */
+}
+
+.portfolio a {
+   text-align: center; /* Center text under images */
+   flex: 1 0 15%; /* Allow items to grow and shrink, base width of 20% */
+}
+
+.main-container {
+   display: flex; 
+   justify-content: space-between;
+   align-items: flex-start;
+   margin-left: 10px; 
+}
+
+#leftColumn {
+   flex: 0 0 30%;
+   margin-right: 20px; /
+}
+
+#rightColumn {
+   flex: 1;
+}
+
+
+#contactInfo iframe {
+   width: 100%; 
+   max-width: 200px; 
+   height: 150px;
+   margin: 0px 20px 20px 0px;
+}
+
+
+
+/* Grid Layout for About Me Section */
+.grid-container {
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 20px;
+   padding: 20px;
+   /* align-items: start; */
+}
+
+/* Logo Styles */
+.about-logo {
+   margin-right: 10px;
+}
+
+/* About Container Styles */
+.about-container {
+   display: flex;
+   align-items: center;
+}
+
+.logo {
+   width: 185px;
+   height: 185px;
+   border-radius: 10px;
+}
+
+/* Main Image Styles */
+.main-image img {
+   width: 100%;
+   height: auto;
+   border-radius: 10px;
+}
+
+/* About Text Styles */
+.about-text {
+   text-align: left;
+   color: white;
+   background-color: rgb(84, 90, 97);
+   padding: 0px 10px 0px 10px;
+   border-radius: 10px;
+
+}
+
+#contactForm {
+   margin: 20px;
+   padding: 20px;
+   background-color: #f4f4f4;
+   border-radius: 8px;
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+ }
+ 
+ #contactForm input,
+ #contactForm textarea {
+   width: 98%;
+   padding: 10px;
+   margin: 8px 0;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+ }
+ 
+ #contactForm button {
+   background-color: green;
+   width: 98%;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+ }
+ 
+ #contactForm button:hover {
+   background-color: #0056b3;
+ }
+ 
+
+
+/* Modal */
+.modal {
+   display: none;
+   position: fixed;
+   z-index: 1;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   background-color: rgba(0, 0, 0, 0.4);
+   padding-top: 60px;
+ }
+ 
+ .modal-content {
+   background-color: #fefefe;
+   margin: 5% auto;
+   padding: 20px;
+   border: 1px solid #888;
+   width: 50%;
+   border-radius: 8px;
+   text-align: center;
+ }
+ 
+ .close {
+   color: #aaa;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+ }
+ 
+ .close:hover,
+ .close:focus {
+   color: black;
+   text-decoration: none;
+   cursor: pointer;
+ }
+ 
+ .modal-content a {
+   color: #007bff;
+   text-decoration: none;
+ }
+ 
+ .modal-content a:hover {
+   text-decoration: underline;
+ }
+ 
+/* Styles for smaller screens */
+@media (max-width: 399px) {
+   .main-image img {
+       max-width: 100%;
+       height: auto;
+   }
+   .about-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+   /* .about-text {
+       text-align: center;
+   } */
+}
+ 
+/* Page Transition Effects */
+.page-transition {
+   transition: all 0.3s ease-in-out;
+   animation: fadeIn 0.5s ease-in;
+ }
+ 
+ @keyframes fadeIn {
+   from { opacity: 0; transform: translateY(20px); }
+   to { opacity: 1; transform: translateY(0); }
+ }
+
+
+ /* Enhanced Link Hover Effects */
+nav.horizontalNavigation a {
+   transition: all 0.3s ease;
+   position: relative;
+ }
+ 
+ nav.horizontalNavigation a:hover {
+   color: var(--hover-color);
+   transform: translateY(-2px);
+ }
+ 
+ nav.horizontalNavigation a::after {
+   content: '';
+   position: absolute;
+   width: 0;
+   height: 2px;
+   bottom: -5px;
+   left: 0;
+   background-color: var(--hover-color);
+   transition: width 0.3s ease;
+ }
+ 
+ nav.horizontalNavigation a:hover::after {
+   width: 100%;
+ }
+ 
+ /* Portfolio Card Effects */
+.portfolio a {
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+ 
+ .portfolio a:hover {
+   transform: translateY(-10px);
+   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+ }
+
+ 
+ /* Enhanced Button Styles */
+#contactForm button {
+   background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+   transition: all 0.3s ease;
+   transform-origin: center;
+ }
+ 
+ #contactForm button:hover {
+   transform: scale(1.05);
+   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+ }
+
+ /* Card Styles */
+.card {
+   background: rgb(84, 90, 97);
+   border-radius: 8px;
+   padding: 15px;
+   margin: 10px;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+   transform: translateY(-10px);
+   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.card img {
+   width: 100%;
+   border-radius: 4px;
+}
+
+.card h3 {
+   color: rgb(239, 220, 156);
+   margin: 10px 0;
+}
+
+.card p {
+   color: rgb(248, 248, 186);
+}
+
+ 
+ 

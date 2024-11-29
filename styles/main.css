@@ -1,0 +1,51 @@
+/* Base text colors */
+body {
+  color: var(--text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--secondary);
+}
+
+p, span, li {
+  color: var(--text);
+}
+
+/* Navigation text */
+nav a {
+  color: var(--secondary);
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+/* Links */
+a {
+  color: var(--primary);
+}
+
+a:hover {
+  color: var(--primary-light);
+}
+
+/* Button text */
+.button {
+  color: var(--white);
+}
+
+/* Form elements */
+input, textarea {
+  color: var(--text);
+}
+
+::placeholder {
+  color: var(--text-light);
+}
+
+/* Footer text */
+footer {
+  color: var(--text);
+}
+
+@import 'colors.css';

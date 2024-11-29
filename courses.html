@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="portfolio, about me, personal" />
+    <title>Courses - Dilpreet Sandhu</title>
+    <link href="CSS/pp_home.css" rel="stylesheet" />
+    <link href="CSS/course.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div id="header_title" class="page-transition">My Personal Page</div>
+      <nav class="horizontalNavigation">
+        <div class="portfolio" style="background-color: rgb(138, 142, 146)">
+          <a href="pp_home.html">Home</a>
+          <a href="portfolio.html">My Portfolio</a>
+          <a href="courses.html">Courses</a>
+          <a href="aboutMe.html">About Me</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <section id="myCollections" class="card">
+      <div class="slider">
+        <div class="slide-container">
+          <div class="slide-item">
+            <img src="Img/goalkeeping.jpg" alt="Image 1" class="slides" />
+            <div class="caption">Goalkeeping</div>
+          </div>
+
+          <div class="slide-item">
+            <img
+              src="Img/football-coaching-1.jpg"
+              alt="Image 2"
+              class="slides"
+            />
+            <div class="caption">Technical Coaching</div>
+          </div>
+
+          <div class="slide-item">
+            <img
+              src="Img/TACTICAL-ANALYSIS-IN-THE-TRAINING-PROCESS-2.webp"
+              alt="Image 3"
+              class="slides"
+            />
+            <div class="caption">Tactical Training</div>
+          </div>
+
+          <button class="prev" onclick="changeSlide(-1)"></button>
+          <button class="next" onclick="changeSlide(1)"></button>
+        </div>
+      </div>
+    </section>
+
+    <div class="progress-dots">
+      <span class="progress-dot" onclick="currentSlide(0)"></span>
+      <span class="progress-dot" onclick="currentSlide(1)"></span>
+      <span class="progress-dot" onclick="currentSlide(2)"></span>
+    </div>
+
+    <footer>
+      <nav class="verticalNavigation">
+        <h1>The Store</h1>
+        <div class="portfolio">
+          <a href="#">About Us</a>
+          <a class="social-link" href="https://www.facebook.com/solo.sandhu/">
+            <img class="social-icon" src="Img/fb.png" alt="Facebook" />Facebook
+          </a>
+          <a class="social-link" href="https://www.instagram.com/solo.sandhu/">
+            <img
+              class="social-icon"
+              src="Img/insta.png"
+              alt="Instagram"
+            />Instagram
+          </a>
+          <a href="#">Reviews</a>
+          <a href="pc_info.html">Infographic</a>
+        </div>
+      </nav>
+      <nav class="verticalNavigation">
+        <h1>Products</h1>
+        <div class="portfolio">
+          <a href="#">Online Store</a>
+          <a href="#">Gift Boxes</a>
+          <a href="courses.html">Courses</a>
+          <a href="#">Weddings</a>
+          <a href="#">Specials</a>
+        </div>
+      </nav>
+      <nav class="verticalNavigation">
+        <h1>Services</h1>
+        <div class="portfolio">
+          <a href="#">My Account</a>
+          <a href="#">Order History</a>
+          <a href="#">Tracking</a>
+          <a href="#">Privacy Policy</a>
+          <a class="social-link" href="contact.html">
+            <img class="social-icon" src="Img/gmail.jpg" alt="Gmail" />Contact
+            Us
+          </a>
+        </div>
+      </nav>
+      <section id="contactInfo" class="card">
+        <h1>Location &amp; Hours</h1>
+        <div class="portfolio">
+          <p>
+            14555 68 Ave <br />
+            Surrey, BC V3S 2A8<br />
+            (604)771-6811
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18..."
+            width="300"
+            height="150"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+          <p>
+            Mon - Thu: 9 a.m. - 8 p.m.<br />
+            Sat - Sun: 9 a.m. - 5 p.m.
+          </p>
+          <p>Toll Free: 1-800-555-0414</p>
+        </div>
+      </section>
+    </footer>
+
+    <script src="Javascript/Courses.js"></script>
+    <script src="responsive/responsive.js"></script>
+  </body>
+</html>

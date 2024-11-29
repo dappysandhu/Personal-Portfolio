@@ -1,0 +1,88 @@
+@import 'theme.css';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 40px;
+    text-align: center;
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+img{
+    border-radius: 12px;
+    box-shadow:  2px 2px 4px rgb(116, 115, 115);
+    transition: transform 0.3s;
+}
+
+img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.portfolio-grid img {
+    margin: 10px;
+    width: calc(33.33% - 20px);
+    max-width: 300px; /* Optional: limit max size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+@media (max-width: 900px) {
+    .portfolio-grid img {
+        width: calc(50% - 20px);
+    }
+    .portfolio-grid img:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 600px) {
+    .portfolio-grid img {
+        width: calc(100% - 20px);
+    }
+    .portfolio-grid img:hover {
+        transform: scale(1.1);
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
+}
